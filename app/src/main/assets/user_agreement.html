@@ -1,7 +1,437 @@
-﻿<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="generator" content="Aspose.Words for .NET 15.1.0.0" /><title></title></head><body><div><p style="font-size:10.5pt; line-height:115%; margin:0pt 0pt 10pt; orphans:0; text-align:center; widows:0"><span style="font-family:宋体; font-size:10.5pt">用户协议</span></p><p style="font-size:10.5pt; line-height:115%; margin:0pt 0pt 10pt; orphans:0; widows:0"><span style="font-family:Calibri; font-size:10.5pt">&#xa0;</span></p></div><div class="cnzz" style="display: none;">
-	        <script src="https://s23.cnzz.com/z_stat.php?id=1277655852&web_id=1277655852" language="JavaScript"></script>
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户协议</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', 'Noto Sans SC', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .app-bar {
+            background-color: #6750A4;
+            color: white;
+            padding: 16px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .app-bar-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .back-button {
+            background: none;
+            border: none;
+            color: white;
+            margin-right: 16px;
+            cursor: pointer;
+        }
+
+        .app-bar-title {
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 24px 16px;
+        }
+
+        .section {
+            margin-bottom: 24px;
+        }
+
+        .section-title {
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: #6750A4;
+            margin-bottom: 8px;
+        }
+
+        .section-content {
+            font-size: 0.875rem;
+            color: #333;
+            text-align: justify;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: #e0e0e0;
+            margin: 16px 0;
+        }
+
+        .action-buttons {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 16px;
+            background: white;
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .button {
+            padding: 10px 24px;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button-outlined {
+            border: 1px solid #6750A4;
+            color: #6750A4;
+            background: white;
+        }
+
+        .button-filled {
+            background-color: #6750A4;
+            color: white;
+            border: none;
+        }
+
+        .button-disabled {
+            background-color: #ccc;
+            color: #666;
+            border: none;
+            cursor: not-allowed;
+        }
+
+        .toc {
+            background-color: #f8f5ff;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+
+        .toc-title {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 12px;
+            color: #6750A4;
+        }
+
+        .toc-item {
+            padding: 8px 0;
+            border-bottom: 1px solid #e6e0e9;
+        }
+
+        .toc-item:last-child {
+            border-bottom: none;
+        }
+
+        .toc-link {
+            color: #6750A4;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .toc-link:hover {
+            text-decoration: underline;
+        }
+
+        .toc-number {
+            margin-right: 8px;
+            font-weight: 500;
+        }
+
+        .last-updated {
+            text-align: center;
+            font-size: 0.75rem;
+            color: #666;
+            margin-bottom: 24px;
+        }
+
+        @media (min-width: 600px) {
+            .container {
+                max-width: 600px;
+                margin: 24px auto;
+                border-radius: 12px;
+                overflow: hidden;
+            }
+
+            .action-buttons {
+                position: sticky;
+                bottom: 0;
+                left: auto;
+                right: auto;
+                width: 100%;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: #e0e0e0;
+            }
+
+            .container {
+                background: #1e1e1e;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            }
+
+            .section-content {
+                color: #e0e0e0;
+            }
+
+            .toc {
+                background-color: #2c2433;
+            }
+
+            .divider {
+                background-color: #3a3a3a;
+            }
+
+            .action-buttons {
+                background: #1e1e1e;
+                box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="app-bar">
+        <div class="app-bar-content">
+            <button class="back-button">
+                <span class="material-icons">arrow_back</span>
+            </button>
+            <h1 class="app-bar-title">用户协议</h1>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="last-updated">最后更新日期：2023年10月15日</div>
+
+        <div class="toc">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-item">
+                <a href="#section1" class="toc-link">
+                    <span class="toc-number">1.</span>
+                    <span>服务条款</span>
+                </a>
             </div>
-            <div class="docpe" style="position: absolute;color: white;margin-left:-450;">
-            <a target="_blank" href="http://www.docpe.com">档铺网——在线文档免费处理</a>
+            <div class="toc-item">
+                <a href="#section2" class="toc-link">
+                    <span class="toc-number">2.</span>
+                    <span>账号注册与安全</span>
+                </a>
             </div>
-            </body></html>
+            <div class="toc-item">
+                <a href="#section3" class="toc-link">
+                    <span class="toc-number">3.</span>
+                    <span>用户行为规范</span>
+                </a>
+            </div>
+            <div class="toc-item">
+                <a href="#section4" class="toc-link">
+                    <span class="toc-number">4.</span>
+                    <span>隐私保护</span>
+                </a>
+            </div>
+            <div class="toc-item">
+                <a href="#section5" class="toc-link">
+                    <span class="toc-number">5.</span>
+                    <span>知识产权</span>
+                </a>
+            </div>
+            <div class="toc-item">
+                <a href="#section6" class="toc-link">
+                    <span class="toc-number">6.</span>
+                    <span>责任限制</span>
+                </a>
+            </div>
+            <div class="toc-item">
+                <a href="#section7" class="toc-link">
+                    <span class="toc-number">7.</span>
+                    <span>协议修改</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="section" id="section1">
+            <h2 class="section-title">1. 服务条款</h2>
+            <div class="section-content">
+                <p>欢迎使用我们的应用程序。本协议是您与本应用之间就相关服务事宜所订立的契约。请您仔细阅读本协议，您点击"同意"按钮后，本协议即构成对双方有约束力的法律文件。</p>
+                <p>我们的服务可能包括但不限于内容浏览、用户交互、数据存储等功能。我们会不断改进服务，为您提供更好的体验。</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section" id="section2">
+            <h2 class="section-title">2. 账号注册与安全</h2>
+            <div class="section-content">
+                <p>在使用某些功能前，您可能需要注册一个账号。您必须保证提供的注册信息真实、准确、完整。</p>
+                <p>您有责任维护账号和密码的安全，对于使用您账号进行的所有活动负全部责任。如发现任何未经授权使用您账号的情况，请立即通知我们。</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section" id="section3">
+            <h2 class="section-title">3. 用户行为规范</h2>
+            <div class="section-content">
+                <p>您同意遵守中华人民共和国相关法律法规，包括但不限于《网络安全法》、《互联网信息服务管理办法》等。</p>
+                <p>您承诺不得利用本服务从事以下活动：</p>
+                <ul>
+                    <li>违反宪法或法律法规规定的；</li>
+                    <li危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；</li>
+                    <li>损害国家荣誉和利益的；</li>
+                    <li>煽动民族仇恨、民族歧视，破坏民族团结的；</li>
+                    <li>破坏国家宗教政策，宣扬邪教和封建迷信的；</li>
+                    <li>散布谣言，扰乱社会秩序，破坏社会稳定的；</li>
+                    <li>散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；</li>
+                    <li>侮辱或者诽谤他人，侵害他人合法权益的；</li>
+                    <li>含有法律、行政法规禁止的其他内容的信息。</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section" id="section4">
+            <h2 class="section-title">4. 隐私保护</h2>
+            <div class="section-content">
+                <p>保护用户隐私是我们的重要原则。我们将按照本协议的约定收集、使用、储存和分享您的个人信息。</p>
+                <p>我们可能会收集以下类型的信息：</p>
+                <ul>
+                    <li>您提供的信息：注册账号时提供的信息，以及使用服务时上传的内容；</li>
+                    <li>位置信息：当您使用位置相关服务时，我们可能会收集并处理有关您实际位置的信息；</li>
+                    <li>设备信息：包括设备型号、操作系统版本、唯一设备标识符等信息；</li>
+                    <li>日志信息：当您使用我们的服务时，我们可能会自动收集相关信息并存储为服务日志信息。</li>
+                </ul>
+                <p>我们不会向任何无关第三方提供、出售、出租、分享或交易您的个人信息，除非事先得到您的许可。</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section" id="section5">
+            <h2 class="section-title">5. 知识产权</h2>
+            <div class="section-content">
+                <p>本应用的所有知识产权，包括但不限于代码、数据库、界面设计、文档、商标、标志等，均归本公司所有。</p>
+                <p>您在使用服务过程中创作、上传、发布、传播的内容，应保证为其原创或已获得合法授权，且您授予我们全球性的、免许可费的、非独家的许可使用权。</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section" id="section6">
+            <h2 class="section-title">6. 责任限制</h2>
+            <div class="section-content">
+                <p>您理解并同意，本应用按照"现状"和"现有"的基础提供服务，我们不对服务作任何明示或暗示的保证。</p>
+                <p>在任何情况下，我们均不对任何间接性、后果性、惩罚性、偶然性、特殊性或刑罚性的损害承担责任。</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section" id="section7">
+            <h2 class="section-title">7. 协议修改</h2>
+            <div class="section-content">
+                <p>我们可能随时修改本协议的任何条款。一旦条款内容发生变动，我们将会直接在APP上公布修改之后的协议内容。</p>
+                <p>如果您不同意我们对本协议相关条款所做的修改，您有权停止使用服务。如果您继续使用服务，则视为您接受我们对相应条款的修改。</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+    </main>
+
+<!--    <div class="action-buttons">-->
+<!--        <button class="button button-outlined" id="rejectButton">拒绝</button>-->
+<!--        <button class="button button-filled button-disabled" id="acceptButton">同意</button>-->
+<!--    </div>-->
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const acceptButton = document.getElementById('acceptButton');
+        const rejectButton = document.getElementById('rejectButton');
+        const content = document.querySelector('.content');
+
+        // 启用接受按钮的逻辑（例如用户滚动到底部）
+        content.addEventListener('scroll', function() {
+            const scrollPosition = content.scrollTop;
+            const scrollHeight = content.scrollHeight;
+            const clientHeight = content.clientHeight;
+
+            // 如果用户滚动到底部，启用接受按钮
+            if (scrollHeight - scrollPosition <= clientHeight + 10) {
+                acceptButton.classList.remove('button-disabled');
+            }
+        });
+
+        // 接受按钮点击事件
+        acceptButton.addEventListener('click', function() {
+            if (!this.classList.contains('button-disabled')) {
+                alert('您已接受用户协议');
+                // 这里可以添加跳转到应用主界面的代码
+            }
+        });
+
+        // 拒绝按钮点击事件
+        rejectButton.addEventListener('click', function() {
+            if (confirm('拒绝用户协议将无法使用本应用，确定要退出吗？')) {
+                alert('您已拒绝用户协议，应用将关闭');
+                // 这里可以添加退出应用的代码
+            }
+        });
+
+        // 目录链接平滑滚动
+        document.querySelectorAll('.toc-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    content.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // 返回按钮功能
+        document.querySelector('.back-button').addEventListener('click', function() {
+            alert('返回上一页面');
+            // 这里可以添加返回逻辑
+        });
+    });
+</script>
+</body>
+</html>
